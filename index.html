@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fake DOOM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="uiContainer">
+    <div id="killCounter" class="hudElement">
+      Muertes: 0
+    </div>
+    <div id="healthBar">
+      <div id="healthValue"></div>
+    </div>
+    <div id="ammoBar">
+      <div id="ammoValue"></div>
+    </div>
+    <!-- <div id="instructions">
+      <p>Click para activar la vista en primera persona</p>
+      <p>W/A/S/D para moverte, SPACE para saltar, click izquierdo para disparar</p>
+    </div> -->
+  </div>
+
+  <!-- Librería Three.js (CDN) -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.151.3/build/three.min.js"></script> -->
+  <!-- Script principal -->
+  <script type="module" src="./src/main.js"></script>
+
+  <div id="gameOverModal" class="modal">
+    <div class="modal-content">
+      <h1>Game Over</h1>
+      <p>Presione F5 para reinciar la partida</p>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>
